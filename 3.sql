@@ -1,0 +1,1 @@
+Select Customers.CustomerName from Customers,Orders,OrderDetails,Products,Suppliers WHERE Customers.CustomerID = Orders.CustomerID and Orders.OrderID = OrderDetails.OrderID and Products.ProductID = OrderDetails.ProductID and Suppliers.SupplierID = Products.SupplierID and Suppliers.Country = "Brazil"
